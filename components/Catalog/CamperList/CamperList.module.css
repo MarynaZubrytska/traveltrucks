@@ -1,0 +1,167 @@
+.list {
+  display: grid;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid var(--gray-light);
+  border-radius: 20px;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 290px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.favButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartIcon {
+  fill: var(--main);
+  transition: all 0.3s ease;
+}
+
+.isFavorite .heartIcon {
+  fill: var(--button);
+}
+
+.infoRow {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ratingText {
+  text-decoration: underline;
+}
+
+.starIcon {
+  fill: var(--rating);
+}
+
+.locationWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.locationIcon {
+  fill: var(--main);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 525px;
+}
+
+.featuresList {
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background-color: var(--badges);
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.link {
+  display: inline-block;
+  background-color: var(--button);
+  color: var(--white);
+  padding: 16px 40px;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  width: fit-content;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background-color: var(--button-hover);
+}

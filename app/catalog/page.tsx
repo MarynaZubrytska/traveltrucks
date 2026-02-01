@@ -29,6 +29,7 @@ export default function CatalogPage() {
   return (
     <main className="container">
       <div className={css.page}>
+        <h2 className="visually-hidden">Catalog</h2>
         <FiltersSidebar />
         
         <section aria-label="Campers catalog">

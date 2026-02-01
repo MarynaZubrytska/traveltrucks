@@ -6,9 +6,7 @@ import Tabs from '@/components/CamperDetails/Tabs/Tabs';
 
 import css from './page.module.css';
 
-type PageProps = {
-  params: Promise<{ id: string }>;
-};
+type PageProps = { params: { id: string } };
 
 export default async function CamperDetailsPage({ params }: PageProps) {
   const { id } = await params;

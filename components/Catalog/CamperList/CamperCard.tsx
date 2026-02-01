@@ -28,12 +28,11 @@ export default function CamperCard({ camper }: CamperCardProps) {
     <article className={css.card}>
       <div className={css.imageWrapper}>
         <Image
-          src={camper.gallery[0]?.original || ''}
+          src={camper.gallery[0]?.original || '/placeholder.jpg'}
           alt={camper.name}
           className={css.image}
           width={292}
           height={320}
-          priority
         />
       </div>
 

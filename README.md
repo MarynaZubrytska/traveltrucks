@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TravelTrucks - Camper Rental Service
 
-## Getting Started
+TravelTrucks is a modern web application designed for users to explore, filter, and book campervans for their next adventure. The platform provides a seamless catalog experience with detailed vehicle information, integrated reviews, and a streamlined booking system.
 
-First, run the development server:
+## Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Camper Catalog**: Browse a wide variety of campervans with high-quality images and essential details.
+* **Advanced Filtering**: Filter campers by location, transmission type, and equipment (AC, Kitchen, TV, etc.) to find the perfect match.
+* **Favorites System**: Save your favorite campers to a dedicated list for quick access later.
+* **Detailed Views**: Explore individual camper pages with detailed specifications and user reviews.
+* **Booking Form**: Integrated booking system with a calendar and real-time validation.
+* **Responsive Design**: Fully optimized for various screen sizes, ensuring a great experience on any device.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Framework**: [Next.js](https://nextjs.org/) (App Router)
+* **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+* **Form Handling**: [Formik](https://formik.org/) & [Yup](https://github.com/jaredpalmer/yup) for validation
+* **Date Selection**: [React Datepicker](https://reactdatepicker.com/)
+* **Styling**: CSS Modules
+* **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
+* **Icons**: SVG Sprites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation & Setup
 
-## Learn More
+## Usage Instructions
 
-To learn more about Next.js, take a look at the following resources:
+* Use the **Catalog** page to view all available campervans.
+* Apply **Filters** on the sidebar to narrow down your search.
+* Click **Show More** to load more campers from the database.
+* Visit the **Camper Details** page to read reviews and book your trip using the sidebar form.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Maryna Zubrytska** - Web Developer
+* [LinkedIn](https://www.linkedin.com/in/maryna-zubrytska/)
+* [GitHub](https://github.com/MarynaZubrytska/)

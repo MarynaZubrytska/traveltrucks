@@ -1,0 +1,18 @@
+.starsWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.filled {
+  fill: var(--rating);
+}
+
+.empty {
+  fill: var(--badges);
+}

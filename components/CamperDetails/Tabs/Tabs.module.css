@@ -1,0 +1,43 @@
+.tabsSection {
+  margin-bottom: 80px;
+}
+
+.tabsNav {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid var(--gray-light);
+  margin-bottom: 44px;
+}
+
+.tabBtn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0 0 24px 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.tabBtn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; 
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--button);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 636px; 
+  gap: 40px; 
+  align-items: stretch;
+}
+
+.tabContent {
+  width: 100%;
+}

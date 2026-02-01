@@ -2,7 +2,7 @@ export type CamperForm = 'panelTruck' | 'fullyIntegrated' | 'alcove';
 
 export type CamperReview = {
   reviewer_name: string;
-  reviewer_rating: number; 
+  reviewer_rating: number;
   comment: string;
 };
 
@@ -45,7 +45,7 @@ export type CampersResponse = {
 
 export type FiltersState = {
   location: string;
-  form: CamperForm | ''; 
+  form: CamperForm | '';
   equipment: {
     AC: boolean;
     automatic: boolean;

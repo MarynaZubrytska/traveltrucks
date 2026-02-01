@@ -11,8 +11,7 @@ export function buildCampersQuery(filters: FiltersState): CampersQueryParams {
 
   const loc = filters.location.trim();
   if (loc) {
-    if (loc.includes(',')) setParam(params, 'location', loc);
-    else setParam(params, 'search', loc);
+    setParam(params, 'location', loc);
   }
 
   if (filters.form) setParam(params, 'form', filters.form);
@@ -26,4 +25,3 @@ export function buildCampersQuery(filters: FiltersState): CampersQueryParams {
 
   return params;
 }
-

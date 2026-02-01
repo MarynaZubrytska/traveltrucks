@@ -1,0 +1,139 @@
+.container {
+  padding: 44px 57px;
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.inputsGap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dateWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dateWrapper :global(.react-datepicker-wrapper) {
+  display: block;
+  width: 100%;
+}
+
+.input,
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 60px;
+  padding: 18px;
+  background-color: var(--inputs);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  outline: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--gray);
+  transition: opacity 0.2s;
+}
+
+.input:focus::placeholder {
+  opacity: 0.5;
+}
+
+.inputError {
+  border-color: var(--button);
+}
+
+.textarea {
+  resize: none;
+  height: 118px;
+}
+
+.submitBtn {
+  margin: 24px auto 0;
+  height: 56px;
+  padding: 16px 63px;
+  background-color: var(--button);
+  color: var(--white);
+  border: none;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: var(--button-hover);
+}
+
+.customCalendar {
+  border: 1px solid var(--text);
+  border-radius: 12px;
+  font-family: inherit;
+  padding: 10px;
+}
+
+.customCalendar :global(.react-datepicker__header) {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--text);
+}
+
+.customCalendar :global(.react-datepicker__day) {
+  border-radius: 50%;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.customCalendar :global(.react-datepicker__day--selected) {
+  background-color: var(--text);
+  color: var(--white);
+}
+
+.customCalendar :global(.react-datepicker__day--today) {
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--button);
+}
+
+.customCalendar :global(.react-datepicker__day:hover) {
+  background-color: var(--text);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.customCalendar :global(.react-datepicker__day--outside-month) {
+  color: var(--gray-light);
+  pointer-events: none;
+}
+
+.customCalendar :global(.react-datepicker__day--keyboard-selected) {
+  background-color: transparent;
+  color: inherit;
+}

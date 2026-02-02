@@ -1,6 +1,13 @@
 .list {
   display: grid;
   gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  display: block;
 }
 
 .card {

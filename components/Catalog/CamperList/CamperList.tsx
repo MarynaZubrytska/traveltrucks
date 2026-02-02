@@ -5,10 +5,12 @@ import css from './CamperList.module.css';
 
 export default function CamperList({ items }: { items: Camper[] }) {
   return (
-    <div className={css.list}>
+    <ul className={css.list}>
       {items.map((c) => (
-        <CamperCard key={c.id} camper={c} />
+        <li key={c.id} className={css.item}>
+          <CamperCard camper={c} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
